@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Tetris Racing</title>
+    <script src=js/oszukany.js"></script>
+    <script src=js/oszukany2.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<script type="text/javascript">class TetrisRacingGame {
+constructor(canvasid){
+const ctx = document.getElementById(canvasid)getContext('2d');
+ctx.fillrect(0,0,100,100);
+}
+}</script>
+<div class="game-container">
+    <div class="game">
+        <div class="logo"></div>
+        <div class="level-container">
+Poziom 1
+    </div>
+        <canvas id="game-canvas" class="game-canvas" width="261" height="522"></canvas>
+<div id="game-resources">
+    <img data-name="opponent-car-img" src="images/opponent-car.png">
+    <img data-name="player-car-img" src="images/player-car.png">
+    <img data-name="game-over-img" src="images/game-over.png">
+    <img data-name="next-level-img" src="images/next-level.png">
+    <img data-name="wall-img" src="images/wall.png">
+    <audio data-name="game-over-sound" src="sound/game-over.mp3"></audio>
+    <audio data-name="next-level-sound" src="sound/next-level.mp3"></audio>
+    <audio data-name="move-sound" src="sound/move.mp3"></audio>
+</div>
+    </div>
+</div>
+</body>
+</html>
